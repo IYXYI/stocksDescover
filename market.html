@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Discovery - Market Outlook</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>Stock Market Discovery</h1>
+                <ul>
+                    <li><a href="index.html">Investment Simulator</a></li>
+                    <li><a href="market.html" class="active">Market Outlook</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Market Trend & Short-Term Outlook</h2>
+
+            <div class="disclaimer">
+                <strong>⚠️ Disclaimer:</strong> This is not financial advice. Market analysis is for educational purposes only.
+                Always consult with qualified financial advisors before making investment decisions.
+            </div>
+
+            <div class="market-overview">
+                <div class="sentiment-card">
+                    <h3>Current Market Sentiment</h3>
+                    <div class="sentiment-indicator" id="sentiment-indicator">
+                        <span class="sentiment-label" id="sentiment-label">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="trend-summary">
+                    <h3>Recent Trend Summary</h3>
+                    <p id="trend-summary">
+                        Analyzing market data...
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h3>DCA Recommendation</h3>
+                    <p id="dca-recommendation">
+                        Evaluating current conditions...
+                    </p>
+                </div>
+            </div>
+
+            <div class="market-explanation">
+                <h3>Understanding Market Sentiment</h3>
+                <div class="sentiment-explanation">
+                    <div class="sentiment-item">
+                        <strong>Bullish:</strong> Positive outlook, favorable for new investments
+                    </div>
+                    <div class="sentiment-item">
+                        <strong>Neutral:</strong> Balanced conditions, proceed with caution
+                    </div>
+                    <div class="sentiment-item">
+                        <strong>Bearish:</strong> Negative outlook, consider waiting or reducing exposure
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stock Market Discovery. For educational purposes only. Not financial advice.</p>
+    </footer>
+
+    <script src="js/market.js"></script>
+</body>
+</html>
