@@ -28,6 +28,18 @@ jobs:
       - name: Run news scraper
         run: python scripts/scrape_news.py
       
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add market.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update market sentiment data [automated]"
+            git push
+          fi
+      
       - name: Check for changes
         id: verify-changed-files
         run: |
