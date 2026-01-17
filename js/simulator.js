@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const monthlyAmountInput = document.getElementById('monthly-amount');
     const annualReturnInput = document.getElementById('annual-return');
-    const durationSelect = document.getElementById('duration');
+    const durationInput = document.getElementById('duration');
     const inflationInput = document.getElementById('inflation');
 
     const totalInvestedEl = document.getElementById('total-invested');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function calculateInvestment() {
         const monthlyAmount = parseFloat(monthlyAmountInput.value) || 0;
         const annualReturn = parseFloat(annualReturnInput.value) / 100 || 0;
-        const duration = parseInt(durationSelect.value) || 10;
+        const duration = parseInt(durationInput.value) || 10;
         const inflationRate = parseFloat(inflationInput.value) / 100 || 0;
 
         const monthlyReturn = annualReturn / 12;
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Event listeners
-    [monthlyAmountInput, annualReturnInput, durationSelect, inflationInput].forEach(input => {
+    [monthlyAmountInput, annualReturnInput, durationInput, inflationInput].forEach(input => {
         input.addEventListener('input', calculateInvestment);
         input.addEventListener('change', calculateInvestment);
     });

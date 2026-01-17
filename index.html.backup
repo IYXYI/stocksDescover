@@ -17,10 +17,11 @@
                         <span class="theme-icon">🌙</span>
                     </button>
                     <ul>
-                        <li><a href="index.html" class="active">Investment Simulator</a></li>
-                        <li><a href="market.html">Market Outlook</a></li>
-                    </ul>
-                </div>
+                <h1>Stock Market Discovery</h1>
+                <ul>
+                    <li><a href="index.html" class="active">Investment Simulator</a></li>
+                    <li><a href="market.html">Market Outlook</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -104,34 +105,5 @@
     </footer>
 
     <script src="js/simulator.js"></script>
-    <script>
-        // Dark mode toggle functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const themeToggle = document.getElementById('theme-toggle');
-            const themeIcon = themeToggle.querySelector('.theme-icon');
-            
-            // Check for saved theme preference or default to light mode
-            const currentTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            updateThemeIcon(currentTheme);
-            
-            themeToggle.addEventListener('click', function() {
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                
-                document.documentElement.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-                updateThemeIcon(newTheme);
-                
-                // Add rotation animation
-                themeToggle.classList.add('rotated');
-                setTimeout(() => themeToggle.classList.remove('rotated'), 300);
-            });
-            
-            function updateThemeIcon(theme) {
-                themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-            }
-        });
-    </script>
 </body>
 </html>
