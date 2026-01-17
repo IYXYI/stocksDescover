@@ -26,8 +26,8 @@ https://iyxyi.github.io/stocksDescover/
 - Interactive growth chart showing portfolio vs invested amount
 
 ### Market Sentiment Analysis
-- **Automated News Scraping**: Runs every 2 minutes via GitHub Actions
-- **Real-time Headlines**: Latest 20 financial news headlines from Yahoo Finance
+- **Automated News Scraping**: Runs every 6 hours via GitHub Actions (or manually)
+- **Real-time Headlines**: Latest financial news headlines from Yahoo Finance
 - **Sentiment Scoring**: Keyword-based analysis of bullish vs bearish terms
 - **Market Recommendations**: DCA guidance based on current sentiment
 - **Live Updates**: Data refreshes automatically without page reload
@@ -37,10 +37,16 @@ https://iyxyi.github.io/stocksDescover/
 The website now features real-time market sentiment analysis powered by automated news scraping:
 
 ### How It Works
-- **Automated Scraping**: A GitHub Action runs every 2 minutes to scrape the latest financial news from Yahoo Finance
+- **Automated Scraping**: A GitHub Action runs every 6 hours (or manually) to scrape financial news from Yahoo Finance
 - **Sentiment Analysis**: Headlines are analyzed using keyword-based sentiment scoring
-- **Real-time Updates**: Market sentiment, recommendations, and headlines are updated automatically
+- **Manual Updates**: Data can be updated manually via workflow dispatch or local script execution
 - **Static Hosting**: All data is stored in `market.json` for fast loading on GitHub Pages
+
+### Manual Data Updates
+For immediate updates to market data:
+1. **GitHub Actions**: Go to repository → Actions → "News Scraper" → "Run workflow"
+2. **Local Update**: Run `python scripts/scrape_news.py` locally, then commit and push changes
+3. **Automated Setup**: For fully automated updates, create a Personal Access Token with repo permissions
 
 ### Sentiment Analysis Methodology
 - **Bullish Keywords**: rally, growth, record high, beats expectations, rate cut, recovery, bullish, AI boom, etc.
@@ -55,10 +61,10 @@ The website now features real-time market sentiment analysis powered by automate
 
 ### Technical Implementation
 - **Language**: Python with BeautifulSoup for web scraping
-- **Scheduling**: GitHub Actions with cron (`*/2 * * * *`)
-- **Data Storage**: JSON file committed to repository
+- **Scheduling**: GitHub Actions with cron (`0 */6 * * *`) - every 6 hours
+- **Data Storage**: JSON file updated via manual workflow dispatch
 - **Frontend**: Vanilla JavaScript fetch API for data loading
-- **Error Handling**: Graceful fallbacks when scraping fails
+- **Error Handling**: Graceful fallbacks with sample data when scraping fails
 
 ## Technologies Used
 

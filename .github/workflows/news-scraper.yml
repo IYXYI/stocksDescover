@@ -1,9 +1,9 @@
 name: News Scraper
 
 on:
+  workflow_dispatch:  # Manual trigger only
   schedule:
-    - cron: "*/5 * * * *"  # Every 5 minutes
-  workflow_dispatch:  # Allow manual runs
+    - cron: "0 */6 * * *"  # Every 6 hours (reduced frequency)
 
 jobs:
   scrape:
@@ -28,16 +28,14 @@ jobs:
       - name: Run news scraper
         run: python scripts/scrape_news.py
       
-      - name: Commit and push changes
+      - name: Display results
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add market.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
+          echo "News scraping completed"
+          if [ -f market.json ]; then
+            echo "Market data updated successfully"
+            head -10 market.json
           else
-            git commit -m "Update market sentiment data [automated]"
-            git push
+            echo "Market data file not found"
           fi
       
       - name: Check for changes
