@@ -1,33 +1,58 @@
 {
-  "updatedAt": "2026-01-17T23:15:00.000000+00:00",
-  "sentimentScore": 0.2,
-  "marketSentiment": "Neutral", 
+  "updatedAt": "2026-01-17T23:18:06.547730+00:00",
+  "sentimentScore": -0.1,
+  "marketSentiment": "Neutral",
   "recommendation": "Market sentiment is mixed. Wait for clearer trend confirmation before making significant changes.",
   "headlines": [
     {
-      "title": "Market Shows Mixed Signals Amid Economic Uncertainty",
-      "description": "Investors remain cautious as economic indicators show conflicting trends",
-      "url": "https://finance.yahoo.com/news/market-analysis"
+      "title": "Why Ford Investors Might Have to Say Goodbye to Its Special Dividend",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/why-ford-investors-might-goodbye-230500281.html"
     },
     {
-      "title": "Tech Stocks Rally on AI Developments", 
-      "description": "Technology sector gains momentum with new artificial intelligence breakthroughs",
-      "url": "https://finance.yahoo.com/news/tech-rally"
+      "title": "How Will Dow Jones Futures React To Trump's Greenland Tariffs On NATO Nations?",
+      "description": "",
+      "url": "https://finance.yahoo.com/m/91bdd023-2caa-3ae6-a602-5e49c5fc1665/how-will-dow-jones-futures.html"
     },
     {
-      "title": "Federal Reserve Signals Potential Rate Changes",
-      "description": "Central bank officials discuss monetary policy adjustments", 
-      "url": "https://finance.yahoo.com/news/fed-policy"
+      "title": "The solar panel contracts that can kill home sales",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/the-solar-panel-contracts-that-can-kill-home-sales-133039793.html"
     },
     {
-      "title": "Oil Prices Fluctuate on Global Supply Concerns",
-      "description": "Energy markets react to international supply chain developments",
-      "url": "https://finance.yahoo.com/news/oil-markets"
+      "title": "Spot rates 25% behind inflation: A capacity crunch could change that",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/spot-rates-25-behind-inflation-195806552.html"
     },
     {
-      "title": "Retail Sales Data Shows Seasonal Patterns",
-      "description": "Consumer spending reports indicate normal holiday season trends",
-      "url": "https://finance.yahoo.com/news/retail-sales"
+      "title": "‘Ridiculously careless’: Pregnant mom needs bigger car, renos for growing family. Ramsey Show hosts say to start saving",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/ridiculously-careless-pregnant-mom-needs-190000077.html"
+    },
+    {
+      "title": "Analyst Report: PPL Corporation",
+      "description": "",
+      "url": "https://finance.yahoo.com/research/reports/MS_0P00000468_AnalystReport_1768608840000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei"
+    },
+    {
+      "title": "Trump Slams Jamie Dimon, JPMorgan. Why He Plans to Sue the Bank.",
+      "description": "",
+      "url": "https://finance.yahoo.com/m/96f1302b-387b-345b-b822-ac5d6ea4bace/trump-slams-jamie-dimon-.html"
+    },
+    {
+      "title": "KLA (KLAC) Gets Upgrade as Foundry-Led WFE Demand Accelerates",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/kla-klac-gets-upgrade-foundry-175739387.html"
+    },
+    {
+      "title": "Arm (ARM) Downgraded by BofA on Smartphone and Royalty Headwinds",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/arm-arm-downgraded-bofa-smartphone-175635979.html"
+    },
+    {
+      "title": "Goldman Sachs Starts Coverage on Super Micro (SMCI) With Sell, $26 Target",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/goldman-sachs-starts-coverage-super-175540712.html"
     }
   ]
 }
