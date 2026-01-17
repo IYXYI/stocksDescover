@@ -1,0 +1,58 @@
+{
+  "updatedAt": "2026-01-17T23:04:30.005078+00:00",
+  "sentimentScore": -0.1,
+  "marketSentiment": "Neutral",
+  "recommendation": "Market sentiment is mixed. Wait for clearer trend confirmation before making significant changes.",
+  "headlines": [
+    {
+      "title": "Trump Slams Jamie Dimon, JPMorgan. Why He Plans to Sue the Bank.",
+      "description": "",
+      "url": "https://finance.yahoo.com/m/96f1302b-387b-345b-b822-ac5d6ea4bace/trump-slams-jamie-dimon-.html"
+    },
+    {
+      "title": "How Will Dow Jones Futures React To Trump's Greenland Tariffs On NATO Nations?",
+      "description": "",
+      "url": "https://finance.yahoo.com/m/91bdd023-2caa-3ae6-a602-5e49c5fc1665/how-will-dow-jones-futures.html"
+    },
+    {
+      "title": "The solar panel contracts that can kill home sales",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/the-solar-panel-contracts-that-can-kill-home-sales-133039793.html"
+    },
+    {
+      "title": "Spot rates 25% behind inflation: A capacity crunch could change that",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/spot-rates-25-behind-inflation-195806552.html"
+    },
+    {
+      "title": "‘Ridiculously careless’: Pregnant mom needs bigger car, renos for growing family. Ramsey Show hosts say to start saving",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/ridiculously-careless-pregnant-mom-needs-190000077.html"
+    },
+    {
+      "title": "Analyst Report: PPL Corporation",
+      "description": "",
+      "url": "https://finance.yahoo.com/research/reports/MS_0P00000468_AnalystReport_1768608840000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei"
+    },
+    {
+      "title": "Is Meta Stock a Buy Going Into 2026?",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/meta-stock-buy-going-2026-225000514.html"
+    },
+    {
+      "title": "KLA (KLAC) Gets Upgrade as Foundry-Led WFE Demand Accelerates",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/kla-klac-gets-upgrade-foundry-175739387.html"
+    },
+    {
+      "title": "Arm (ARM) Downgraded by BofA on Smartphone and Royalty Headwinds",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/arm-arm-downgraded-bofa-smartphone-175635979.html"
+    },
+    {
+      "title": "Goldman Sachs Starts Coverage on Super Micro (SMCI) With Sell, $26 Target",
+      "description": "",
+      "url": "https://finance.yahoo.com/news/goldman-sachs-starts-coverage-super-175540712.html"
+    }
+  ]
+}
