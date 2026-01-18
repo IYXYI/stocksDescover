@@ -247,12 +247,35 @@ main {
 }
 
 .chart-container {
-    height: 450px;
+    height: 560px;
     margin-top: 2rem;
     background: var(--card-bg);
     border-radius: var(--border-radius);
     padding: 1rem;
     box-shadow: 0 4px 15px var(--card-shadow);
+}
+
+.milestones {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    background: linear-gradient(135deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.02) 100%);
+    border-radius: 8px;
+}
+
+.milestone-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.milestone-item {
+    background: rgba(52,152,219,0.06);
+    padding: 0.6rem 0.9rem;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px solid rgba(52,152,219,0.12);
 }
 
 /* Market page styles */
