@@ -156,7 +156,7 @@ main {
 /* Simulator styles */
 .simulator-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -247,7 +247,7 @@ main {
 }
 
 .chart-container {
-    height: 560px;
+    height: 720px;
     margin-top: 2rem;
     background: var(--card-bg);
     border-radius: var(--border-radius);
@@ -276,6 +276,10 @@ main {
     font-weight: 600;
     color: var(--accent);
     border: 1px solid rgba(52,152,219,0.12);
+}
+
+.milestone-item {
+    font-size: 0.95rem;
 }
 
 /* Market page styles */

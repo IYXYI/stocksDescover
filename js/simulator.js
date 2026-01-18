@@ -171,11 +171,10 @@ document.addEventListener('DOMContentLoaded', function() {
             portfolioValue = (portfolioValue + monthlyAmount) * (1 + monthlyReturn);
             monthlyPortfolio[month] = portfolioValue;
             monthlyInvested[month] = totalInvested;
-            if (month % 12 === 0) {
-                const year = month / 12;
-                portfolioValues.push({ x: year, y: Math.round(portfolioValue) });
-                investedValues.push({ x: year, y: Math.round(totalInvested) });
-            }
+            // push monthly points for a smooth curve
+            const yearFrac = month / 12;
+            portfolioValues.push({ x: yearFrac, y: portfolioValue });
+            investedValues.push({ x: yearFrac, y: totalInvested });
         }
 
         // compute milestone crossings per €100k
@@ -211,9 +210,9 @@ document.addEventListener('DOMContentLoaded', function() {
         totalGainsEl.textContent = '€' + Math.round(totalGains).toLocaleString();
         cagrEl.textContent = isFinite(cagr) ? cagr.toFixed(2) + '%' : '—';
 
-        // Update chart data and scale
-        growthChart.data.datasets[0].data = portfolioValues;
-        growthChart.data.datasets[1].data = investedValues;
+        // Update chart data and scale (use monthly data for smooth curve)
+        growthChart.data.datasets[0].data = portfolioValues.map(p => ({ x: p.x, y: Math.round(p.y) }));
+        growthChart.data.datasets[1].data = investedValues.map(p => ({ x: p.x, y: Math.round(p.y) }));
         growthChart.options.scales.x.max = duration;
         growthChart.options.scales.x.min = 0;
 
